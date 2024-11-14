@@ -1,0 +1,163 @@
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/lato-v24-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* lato-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/lato-v24-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* lato-900 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/lato-v24-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  
+
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url(../fonts/Gilroy/Gilroy-Regular.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Gilroy', sans-serif;
+    overflow: auto;
+}
+
+
+.intro{
+    height:100vh;
+    background: url("../img/fon.jpeg") no-repeat center;
+    /* z-index: -1; */
+    background-size: cover;
+  }
+.body{
+    font-family: 'Gilroy-Regular';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #464646;
+
+  }
+
+
+.header__wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.header_list{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-left: 170px;
+}
+
+.header__item{
+  margin-right: 82px;
+}
+
+.header__link{
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: left;
+  color: #464646;
+  text-decoration: none;
+
+}
+
+.wrapper{
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 1920px;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: #ffffff; /* Пример использования HEX для серого цвета */
+}
+
+
+
+.intro__title{
+
+    width: 623px;
+    height: 208px;
+    gap: 0px;
+    opacity: 1; /* Убедитесь, что текст виден */
+    position: absolute;
+    top: 160px;
+    left: 302px;
+    color: #ffffff;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.03em;
+    text-align: left;
+}
+
+
+.second__title {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 16px;
+  position: absolute;
+  top: 280px;
+  left: 302px;
+  font-weight: 500;
+  line-height: 28.6px;
+  text-align: left;
+  width: 638px;
+  height: 58px;
+  gap: 0px;
+  /* opacity: 1; */
+  color: #ffffff; 
+  margin-top: 20px;
+  margin-left: -20px;
+  
+}
+
+
+
+
+.container {
+  position: relative; /* Устанавливаем относительное позиционирование для контейнера */
+}
+
+.rectangle {
+  width: 3px;
+  height: 110px;
+  background-color: #EB6329;
+  opacity: 1;
+  margin-left:55px;
+  position: absolute; /* Абсолютное позиционирование */
+  top: 169px; /* Опускаем элемент вниз на 50 пикселей */
+}
+
+.container {
+  width: 100%; /* Устанавливаем ширину контейнера */
+  height: 400px; /* Высота контейнера, например, 400 пикселей */
+  overflow-y: scroll; /* Вертикальная прокрутка */
+  overflow-x: auto; /* Горизонтальная прокрутка, если содержимое превышает ширину */
+}
